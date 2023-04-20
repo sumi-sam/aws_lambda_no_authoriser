@@ -5,3 +5,4 @@ env.json
 samconfig.toml
 .ipynb_checkpoints/
 .virtualenv
+deploy
