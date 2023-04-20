@@ -15,9 +15,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
       # sam build 
-      - run: sam build --use-container
+      - run: sam build -t template_no_auth.yaml 
 
 # Run Unit tests- Specify unit tests here 
 
 # sam deploy
-      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-hello-world --s3-bucket ##s3-bucket## --capabilities CAPABILITY_IAM --region ##region## 
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name predict-no-auth --s3-bucket ##s3-bucket## --capabilities CAPABILITY_IAM --region ##region## 
