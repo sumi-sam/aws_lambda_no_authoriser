@@ -4,3 +4,4 @@ env.json
 *.pptx
 samconfig.toml
 .ipynb_checkpoints/
+.virtualenv
