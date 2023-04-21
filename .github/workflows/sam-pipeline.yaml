@@ -21,5 +21,4 @@ jobs:
 # Run Unit tests- Specify unit tests here 
 
 # sam deploy
-      - run: sam deploy --guided | predict-no-auth | ap-south-1 | dev | N | Y| y|y|Y|samconfig.toml|default|Y
-
+      - run: sam deploy --guided || predict-no-auth || ap-south-1 || dev || N || Y || y || y || Y || samconfig.toml || default || Y
