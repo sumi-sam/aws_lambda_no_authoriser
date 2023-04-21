@@ -16,6 +16,8 @@ Resources:
     Type: AWS::Serverless::Api
     Properties:
       StageName: !Ref Stage
+      Auth:
+        DefaultAuthorizer: AWS_IAM
   # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
   PredictFunction:
     Type: AWS::Serverless::Function
