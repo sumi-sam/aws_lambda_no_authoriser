@@ -21,5 +21,5 @@ jobs:
 # Run Unit tests- Specify unit tests here 
 
 # sam deploy
-      - run:  y | sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --on-failure DELETE --stack-name predict-no-auth --capabilities  CAPABILITY_IAM --s3-bucket lh-lambda-buckets-pod2-april20 --region ap-south-1 --image-repository ${{ secrets.ECR }} --disable-rollback y --PredictFunction may not have authorization defined, Is this okay? [y/N] y
+      - run:  y | sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --on-failure DELETE --stack-name predict-no-auth --capabilities  CAPABILITY_IAM --s3-bucket lh-lambda-buckets-pod2-april20 --region ap-south-1 --image-repository ${{ secrets.ECR }} --disable-rollback y 
 
