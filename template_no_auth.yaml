@@ -30,6 +30,8 @@ Resources:
             RestApiId: !Ref LambdaAPI
             Path: /predict
             Method: POST
+            Auth:
+              Authorizer: NONE
       Policies:
         - AmazonS3FullAccess
     Metadata:
