@@ -20,4 +20,7 @@ This aim of this guide is to walk you through the step required to deploy a mach
 * Initialising a S3 bucket as a data store.
 * Local testing of dockerised lambda functions with AWS Serverless Application Model (SAM).
 * Deployment of cloudformation stack using AWS SAM.
+* Usage of GitHub Action for deployement as part of MLOPS
+
+Update the Secret like Access Key, Secret Key and ECR URI 
 
